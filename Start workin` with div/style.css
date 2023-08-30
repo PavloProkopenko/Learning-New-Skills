@@ -1,0 +1,26 @@
+#div-1 {
+    background-color: burlywood;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.div {
+    color: brown;
+    text-align: center;
+}
+
+#div-2 {
+    background-color: burlywood;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: blueviolet;
+}
+
+.list {
+    list-style-type: upper-latin;
+    text-align: center;
+    font-size: 14px;
+    background-color: aquamarine;
+}

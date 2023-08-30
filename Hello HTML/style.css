@@ -1,0 +1,18 @@
+h1 {
+    color: darkslateblue;
+}
+
+img {
+    display: block;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: center;
+}
+/* Id must be unique, class can be repeatable */
+/* We use div for make our site with blocks */
