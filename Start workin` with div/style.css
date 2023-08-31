@@ -19,8 +19,42 @@
 }
 
 .list {
-    list-style-type: upper-latin;
-    text-align: center;
-    font-size: 14px;
-    background-color: aquamarine;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+.parent-1 > p {
+    color: cadetblue;
+}
+
+/* We use > for boarding our selectors. You can see this in example */
+/* If we used +, we will change only the first selector
+/* If we used ~, we will change all of the selectors */
+/* We can use selector[id or class] for change something */
+
+/* margin - відступ */
+
+.parent p {
+    width: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* blocks have same with as parent class */
+
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px; 
+}
+
+.inline-block-1 {
+    display: inline-block;    
+}
+
+/* line elements don't have his own width. Only content can change it */
+/* inline elements can't have top and bottom margin */
