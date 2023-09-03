@@ -45,6 +45,8 @@
     margin-bottom: 25px;
 }
 /* blocks have same with as parent class */
+/* line elements don't have his own width. Only content can change it */
+/* inline elements can't have top and bottom margin */
 
 a {
     margin-left: 20px;
@@ -52,9 +54,98 @@ a {
     width: 100px; 
 }
 
-.inline-block-1 {
-    display: inline-block;    
+.Paragraph p{
+    display: inline-block;
+    height: 100px;
+    width: 100px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
-/* line elements don't have his own width. Only content can change it */
-/* inline elements can't have top and bottom margin */
+/* We can use inline-block to make inline list, for example - menu */
+/* We can change all what we want - margins from all sides */
+
+.none {
+    display: none;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Display none: makes somtething in page invisible */
+/* Also we can make this with visibility:hiden  */
+/* Their main difference: visibility saves div position, display: none don't */
+/* New div will be in position div with display: none */
+
+.pixels {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    /* 38 px = 1 cm */
+}
+
+.procent {
+    width: 50%;
+    background-color: bisque;
+    /* If we use procent - our block will change 
+    with user changes (changing window resolution) */
+}
+
+.vv {
+    width: 50vw;
+    height: 50vh;
+    background-color:brown;
+    /* VW and VW - they will change based on monitor 
+    (height and width) */
+    /* Block can't make rules for vw and vh */
+}
+
+.em {
+    font-size: 2em;
+    /* 1 em will inherit size from html 
+    For example, if in html we 
+    have font-size: 16 px, 1 em = 16 px*/
+}
+
+.em-child {
+    font-size: 1em;
+    /* If we create new class in class - 
+    em class will be father class, so
+    em-child = em */
+    /* 1 em will work for every property */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.rem {
+    font-size: 1rem;
+    /* 1 rem always take his properties from html */
+}
+
+.priority {
+    font-size: 10px;
+    color: pink;
+}
+
+div h1 {
+    font-size: 2em;
+    color: aquamarine;
+}
+
+h1 {
+    color: black;
+}
+
+/* from less to high */
+/* p (tag selector) */
+/* . (class selector) */
+/* # (id selector) */
+/* inline-style*/
+/* !important */

@@ -1,0 +1,64 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    /* Sans-serif is default for family.
+    If we have some problems with our font,
+    html will connect some font for text 
+    automaticly*/
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none; 
+    /* If you want to delete marks near 
+    your links - you have to use this
+    property */
+}
+
+a {
+    text-decoration: none;
+    /* This propetry delete underline */
+    color:inherit;
+    /* For default we have color -weblink-kit, so
+    for change it we must input this property */
+}
+
+.header {
+    line-height: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+
+}
+
+
+.nav-list li {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Pseudo-class */
+/* nth-child() - searches element in father class*/
+/* nth-of-type() -  searches element by TYPE in father class*/
+.nav-list li:last-of-type a {
+    display: block;
+    color: whitesmoke;
+    font-weight: bold;
+    height: 30px;
+    padding: 0 10px;
+    background-color: black;
+    line-height: 30px;
+    border-radius: 3px;
+    transition: all 350ms ease;
+    target: _blank;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-list li:last-of-type a svg {
+    width: 1em;
+}
