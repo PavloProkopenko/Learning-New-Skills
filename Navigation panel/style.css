@@ -24,34 +24,50 @@ a {
 }
 
 .header {
-    line-height: 50px;
-    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    line-height: 60px;
+    height: 60px;
     background-color: antiquewhite;
 
 }
 
+/* .logo-container {
+    display: flex;
+    justify-content: left;
+} */
+
+.logo-link {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
 
 .nav-list li {
-    display: inline-block;
     color: black;
     font-weight: bold;
     font-size: 14px;
+    padding: 0 20px;
 }
 
 /* Pseudo-class */
 /* nth-child() - searches element in father class*/
 /* nth-of-type() -  searches element by TYPE in father class*/
 .nav-list li:last-of-type a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
     color: whitesmoke;
     font-weight: bold;
-    height: 30px;
     padding: 0 10px;
     background-color: black;
-    line-height: 30px;
     border-radius: 3px;
     transition: all 350ms ease;
-    target: _blank;
 }
 
 .nav-list li:last-of-type a:hover {
@@ -61,4 +77,18 @@ a {
 
 .nav-list li:last-of-type a svg {
     width: 1em;
+    padding-right: 5px;
+}
+
+/* Levels of css box
+1. Content
+2. Padding
+3. Border
+4. Margin */
+/* If you want to contain padding in box size
+you should use block-sizing: border-box */
+
+.logo-img {
+    width: auto;
+    height: 40px;
 }
